@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CRUDEmploye.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CRUDService.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CRUDSite.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminMDP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Utilisateur.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Administrateur.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CRUDEmploye.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CRUDService.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CRUDSite.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="fenetres\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminMDP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Utilisateur.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Administrateur.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
