@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApp08.Models
+namespace WpfApp08.Models2
 {
     public class Service
     {
         [Required]
         [Key]
-        public int ID { get; set; }
+        public int IDService { get; set; }
         public string Nom_Service { get; set; }
     }
 }
