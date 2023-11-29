@@ -21,8 +21,8 @@
         <DataGrid AutoGenerateColumns="True" x:Name="DataGrid1" CanUserAddRows="true"  HorizontalAlignment="Left" Height="147" Margin="229,26,0,0" VerticalAlignment="Top" Width="251" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Row="1"/>
         <Button Click="Ajouter_Click" Content="Ajouter" HorizontalAlignment="Left" Height="27" Margin="620,40,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1"/>
         <Button Click="Supprimer_Click" Content="Supprimer" HorizontalAlignment="Left" Height="27" Margin="620,90,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1"/>
-        <TextBox x:Name="Ville" HorizontalAlignment="Left" Height="16" Margin="193,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="121"/>
-        <TextBox x:Name="Statut_Site" HorizontalAlignment="Left" Height="17" Margin="349,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="Ville" HorizontalAlignment="Left" Height="16" Margin="277,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="121"/>
+        <TextBox BorderBrush="White" HorizontalAlignment="Left" Margin="280,21,0,0" TextWrapping="Wrap" Text="Ville:" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

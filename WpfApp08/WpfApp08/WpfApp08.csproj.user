@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Ajouter_Salarie.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CRUDEmploye.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -30,6 +33,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Ajouter_Salarie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="CRUDEmploye.xaml">
       <SubType>Designer</SubType>
     </Page>

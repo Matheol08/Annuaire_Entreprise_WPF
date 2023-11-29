@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\mathe\OneDrive\Bureau\wpfv2\WpfApp08\WpfApp08\obj\Debug\net6.0-windows\
+C:\Users\mathe\OneDrive\Documents\Projet Annuaire\Annuaire_Entreprise_WPF\WpfApp08\WpfApp08\obj\Debug\net6.0-windows\
 WpfApp08
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\mathe\OneDrive\Bureau\wpfv2\WpfApp08\WpfApp08\App.xaml
-876483103
+C:\Users\mathe\OneDrive\Documents\Projet Annuaire\Annuaire_Entreprise_WPF\WpfApp08\WpfApp08\App.xaml
+9-1524828868
 
-15-1698285015
+161595945088
 211-894222346
-Administrateur.xaml;AdminMDP.xaml;CRUDEmploye.xaml;CRUDService.xaml;CRUDSite.xaml;fenetres\MainWindow.xaml;Utilisateur.xaml;Window1.xaml;
+Administrateur.xaml;AdminMDP.xaml;Ajouter_Salarie.xaml;CRUDEmploye.xaml;CRUDService.xaml;CRUDSite.xaml;fenetres\MainWindow.xaml;Utilisateur.xaml;Window1.xaml;
 
-False
+True
 

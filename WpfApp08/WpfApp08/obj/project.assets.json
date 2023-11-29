@@ -2339,11 +2339,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Bureau\\wpfv2\\WpfApp08\\WpfApp08\\WpfApp08.csproj",
+      "projectUniqueName": "C:\\Users\\mathe\\OneDrive\\Documents\\Projet Annuaire\\Annuaire_Entreprise_WPF\\WpfApp08\\WpfApp08\\WpfApp08.csproj",
       "projectName": "WpfApp08",
-      "projectPath": "C:\\Users\\mathe\\OneDrive\\Bureau\\wpfv2\\WpfApp08\\WpfApp08\\WpfApp08.csproj",
+      "projectPath": "C:\\Users\\mathe\\OneDrive\\Documents\\Projet Annuaire\\Annuaire_Entreprise_WPF\\WpfApp08\\WpfApp08\\WpfApp08.csproj",
       "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mathe\\OneDrive\\Bureau\\wpfv2\\WpfApp08\\WpfApp08\\obj\\",
+      "outputPath": "C:\\Users\\mathe\\OneDrive\\Documents\\Projet Annuaire\\Annuaire_Entreprise_WPF\\WpfApp08\\WpfApp08\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",

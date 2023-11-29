@@ -26,27 +26,6 @@
             <ColumnDefinition Width="325*"/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <WrapPanel Background="#FF467AA8" Grid.Column="1" Margin="180,192,438,181">
-
-            <Button  Content="UTILISATEUR" Click="OuvrirNouvelleFenetre_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Width="181" Foreground="White" BorderBrush="#FFE2E0E0">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FF406B8F" Offset="0.578"/>
-                        <GradientStop Color="#FF6DA0CA" Offset="1"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-        </WrapPanel>
-        <WrapPanel Background="#FF4477A4" Grid.Column="1" Margin="438,192,180,181">
-            <Button Content="ADMIN" Click="OuvrirFenetre_Admin_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Height="80" Width="181" Foreground="White" BorderBrush="#FF677267">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FF3A556E" Offset="0"/>
-                        <GradientStop Color="#FF5E9BD2" Offset="0.983"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-        </WrapPanel>
         <TextBox Grid.Column="1" IsReadOnly="True" HorizontalAlignment="Left" Height="53" Margin="116,42,0,0" TextWrapping="Wrap" Text="ANNUAIRE ENTREPRISE" VerticalAlignment="Top" Width="545" FontFamily="Arial Black" FontSize="40">
             <TextBox.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -55,6 +34,14 @@
                 </LinearGradientBrush>
             </TextBox.Background>
         </TextBox>
+        <Button  Content="UTILISATEUR" Click="OuvrirNouvelleFenetre_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Height="80" Width="276" Foreground="White" BorderBrush="#FFE2E0E0" Grid.Column="1" Margin="0,183,0,0">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF406B8F" Offset="0.578"/>
+                    <GradientStop Color="#FF6DA0CA" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
 
     </Grid>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9lUrTnVfU+dYbnSmGq80sBW1u1GlIBDAKamLu+zNWRMFX5pqUey+giGNt6QTVxHnVKuDY/CjS/7LHaCu2GKSjw==",
+  "dgSpecHash": "pQOXoxWGTkVmddS/uub5L1zt9YmFD8KnbF8sDEaumNEpuvx7L8mZmsJgQaKeyDU529yjM9iTNndcIWsd0NnmYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mathe\\OneDrive\\Bureau\\wpfv2\\WpfApp08\\WpfApp08\\WpfApp08.csproj",
+  "projectFilePath": "C:\\Users\\mathe\\OneDrive\\Documents\\Projet Annuaire\\Annuaire_Entreprise_WPF\\WpfApp08\\WpfApp08\\WpfApp08.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mathe\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

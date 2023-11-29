@@ -42,7 +42,7 @@ namespace WpfApp08
 
         private async void Ajouter_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(Ville.Text) || string.IsNullOrEmpty(Statut_Site.Text))
+            if (string.IsNullOrEmpty(Ville.Text) )
             {
                 // Afficher un message à l'utilisateur
                 MessageBox.Show("Veuillez remplir les champs Ville et Statut_Site.");
@@ -51,13 +51,10 @@ namespace WpfApp08
             {
 
                 string Nouveasite = Ville.Text;
-                string Nouveastatut = Statut_Site.Text;
 
                 Sites nouveauSite = new Sites
                 {
                     Ville = Nouveasite,
-                    Statut_Site = Nouveastatut,
-
                 };
 
                 Sites.Add(nouveauSite);
@@ -90,8 +87,10 @@ namespace WpfApp08
                     {
                         var content = new StringContent(jsonData, Encoding.UTF8, "application/json");
                         var response = await client.PostAsync(apiUrl, content);
-
-                        return response.IsSuccessStatusCode;
+                    CRUDSite Pagesite = new CRUDSite();
+                    Pagesite.Show();
+                    this.Close();
+                    return response.IsSuccessStatusCode;
                     }
                 }
                 catch (Exception ex)
@@ -142,7 +141,9 @@ namespace WpfApp08
                 using (HttpClient client = new HttpClient())
                 {
                     var response = await client.DeleteAsync(apiUrl);
-
+                    CRUDSite Pagesite = new CRUDSite();
+                    Pagesite.Show();
+                    this.Close();
                     return response.IsSuccessStatusCode;
                 }
             }
