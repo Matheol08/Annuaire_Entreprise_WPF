@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using WpfApp08.Models3;
 using WpfApp08.Models2;
 using Newtonsoft.Json;
+using System.Windows.Navigation;
 
 namespace WPF_Salaries
 {
@@ -22,28 +23,20 @@ namespace WPF_Salaries
         public string Prenom { get; set; }
         public string Telephone_fixe { get; set; } 
         public string Telephone_portable { get; set; }
-        public string Email { get; set; }    
-        [ForeignKey("Service")]
-        
-        public int IDservice { get; set; }
+        public string Email { get; set; }
+        [ForeignKey("Service_Employe")]
 
-        public virtual Service Service { get; set; }
+        public int IDService { get; set; }
 
-        public string Nom_Service
-        {
-            get { return Service?.Nom_Service; }
-        }
+        public virtual Service Service_Employe { get; set; }
 
+       
         [ForeignKey("Sites")]
         public int IDSite { get; set; }
-       
+
         public virtual Sites Sites { get; set; }
 
-        public string Ville
-        {
-            get { return Sites?.Ville; }
-        }
+        
     }
 }
-
 

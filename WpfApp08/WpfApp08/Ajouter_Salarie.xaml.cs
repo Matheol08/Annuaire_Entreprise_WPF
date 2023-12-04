@@ -96,7 +96,7 @@ namespace WpfApp08
         {
             try
             {
-                // Vérifier si tous les champs requis sont remplis
+                
                 if (string.IsNullOrEmpty(Text1.Text) ||
                     string.IsNullOrEmpty(Text2.Text) ||
                     string.IsNullOrEmpty(Text3.Text) ||

@@ -45,7 +45,7 @@ namespace WpfApp08
             if (string.IsNullOrEmpty(Ville.Text) )
             {
                 // Afficher un message à l'utilisateur
-                MessageBox.Show("Veuillez remplir les champs Ville et Statut_Site.");
+                MessageBox.Show("Veuillez remplir le champ Ville.");
             }
             else
             {
@@ -102,7 +102,6 @@ namespace WpfApp08
             }
         private async void Supprimer_Click(object sender, RoutedEventArgs e)
         {
-            // Obtenez la ligne sélectionnée dans le DataGrid
             Sites siteSelectionne = (Sites)DataGrid1.SelectedItem;
 
             if (siteSelectionne != null)

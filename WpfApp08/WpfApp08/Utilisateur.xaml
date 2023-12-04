@@ -20,16 +20,15 @@
 
 
         <ComboBox x:Name="ComboService" Grid.Row="0" Margin="271,117,590,28" Grid.Column="1">
-            <!--remplir par programmation-->
         </ComboBox>
         <ComboBox x:Name="ComboVille" Grid.Row="0" Margin="563,119,298,26" Grid.Column="1">
-            <!--remplir par programmation-->
         </ComboBox>
-        <TextBox HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="213" Height="28" Grid.Row="0" Margin="368,57,0,0" Grid.Column="1"/>
-        <Button Content="Rechercher" HorizontalAlignment="Left" Height="26" Margin="634,63,0,0" VerticalAlignment="Top" Width="66" Grid.Column="1"/>
-        <DataGrid AutoGenerateColumns="False" IsReadOnly="True" x:Name="DataGrid1" HorizontalAlignment="Left" Width="533" Grid.Column="1" Margin="213,0,0,0" Grid.Row="1"/>
+        <TextBox x:Name="RechercherText" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="213" Height="28" Grid.Row="0" Margin="368,57,0,0" Grid.Column="1"/>
+        <Button Content="Rechercher" HorizontalAlignment="Left" Height="26" Margin="634,63,0,0" VerticalAlignment="Top" Width="66" Grid.Column="1" Click ="Bouton_Rechercher"/>
+        <DataGrid AutoGenerateColumns="False" IsReadOnly="True" x:Name="DataGrid1" HorizontalAlignment="Left" Width="606" Grid.Column="1" Margin="174,165,0,2" Grid.RowSpan="2"/>
 
         <Button Content="&lt;" HorizontalAlignment="Left" Height="19" Margin="7,7,0,0" VerticalAlignment="Top" Width="20" Click="Button_Click" Grid.Column="1"/>
+        <Button Click="Actualiser" Grid.Column="1" Content="Actualiser" HorizontalAlignment="Left" Margin="312,64,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 

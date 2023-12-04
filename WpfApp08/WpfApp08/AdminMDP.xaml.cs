@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -32,34 +34,54 @@ namespace WpfApp08
             PageAcceuil.Show();
             this.Close();
         }
-        
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            ValiderMotDePasse();
-        }
+            string valeurSaisie = passwordBox.Password;
 
-        private void ValiderMotDePasse()
-        {
+            using (HttpClient client = new HttpClient())
+            {
+                string apiUrl = $"https://localhost:7152/api/Admin/verificationAdmin?idadmin=1&valeurSaisie={valeurSaisie}";
 
-            // Vérifier le mot de passe (remplacez "votreMotDePasse" par le mot de passe réel)
-            string motDePasseAttendu = "3XFAhF!5";
-                string motDePasseSaisi = passwordBox.Password;
+                HttpResponseMessage response = await client.GetAsync(apiUrl);
 
-                if (motDePasseSaisi == motDePasseAttendu)
+                if (response.IsSuccessStatusCode)
                 {
-                Administrateur pageadmin = new Administrateur();
-                pageadmin.Show();
-                this.Close();
+                    string responseContent = await response.Content.ReadAsStringAsync();
 
+                    if (responseContent == "Mot de passe correct.")
+                    {
+
+
+                        Administrateur PageAcceuil = new Administrateur();
+                        PageAcceuil.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Mot de passe incorrect.");
+                        
+                    }
                 }
                 else
                 {
-                passwordBox.Password = "";
-                MessageBox.Show("Mot de passe incorrect. Veuillez réessayer.");
-                    
+                    MessageBox.Show("Erreur lors de la requête API.");
                 }
+            }
+            passwordBox.Password = "";
         }
-        
+
+
+
+
+
+        public class VerificationResponse
+        {
+            public bool IsCorrect { get; set; }
+            public string Message { get; set; }
+        }
+
+
     }
 }
