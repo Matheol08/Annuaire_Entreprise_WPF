@@ -4,7 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Utilisateur" Height="500" Width="1000"  WindowStartupLocation="CenterScreen" >
+        Title="Utilisateur" Height="500" Width="1000"  WindowStartupLocation="CenterScreen" Background="#FF0F0F2D"
+        WindowStyle="None">
     <Grid Height="434" VerticalAlignment="Bottom">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="27*"/>
@@ -17,18 +18,47 @@
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
 
+        <StackPanel Width="388" Height="144" Grid.Column="1" Margin="764,-9,-179,32">
+            <Border Width="401" Height="35" Background="#FF3DDDC2" Margin="150,0,0,0" CornerRadius="20"/>
+            <Border Width="675" Height="35" Background="#FC6586" Margin="0,15,0,0" CornerRadius="20"/>
+            <Border Width="700" Height="35" Background="#383660" Margin="75,15,0,0" CornerRadius="20"/>
+        </StackPanel>
+        <StackPanel Height="144" Margin="-454,-26,634,49" Grid.ColumnSpan="2">
+            <Border Width="154" Height="35" Background="#FF3DDDC2" CornerRadius="20"/>
+            <Border Width="476" Height="35" Background="#FC6586" Margin="0,15,0,0" CornerRadius="20"/>
+            <Border Width="278" Height="35" Background="#383660" Margin="75,15,0,0" CornerRadius="20"/>
+        </StackPanel>
 
-
-        <ComboBox x:Name="ComboService" Grid.Row="0" Margin="271,117,590,28" Grid.Column="1">
+        <ComboBox x:Name="ComboService" Grid.Row="0" Margin="269,76,592,66" Grid.Column="1">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FFEBD0A1" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
         </ComboBox>
-        <ComboBox x:Name="ComboVille" Grid.Row="0" Margin="563,119,298,26" Grid.Column="1">
+        <ComboBox x:Name="ComboVille" Grid.Row="0" Margin="561,76,300,66" Grid.Column="1">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FFEBD0A1" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
         </ComboBox>
-        <TextBox x:Name="RechercherText" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="213" Height="28" Grid.Row="0" Margin="368,57,0,0" Grid.Column="1"/>
-        <Button Content="Rechercher" HorizontalAlignment="Left" Height="26" Margin="634,63,0,0" VerticalAlignment="Top" Width="66" Grid.Column="1" Click ="Bouton_Rechercher"/>
-        <DataGrid AutoGenerateColumns="False" IsReadOnly="True" x:Name="DataGrid1" HorizontalAlignment="Left" Width="606" Grid.Column="1" Margin="174,165,0,2" Grid.RowSpan="2"/>
+        <TextBox x:Name="RechercherText" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="218" Height="33" Grid.Row="0" Margin="359,-14,0,0" Grid.Column="1" Background="#FFFBFBFB"/>
+        <Button Content="Rechercher" HorizontalAlignment="Left" Height="26" Margin="591,-12,0,0" VerticalAlignment="Top" Width="66" Grid.Column="1" Click ="Bouton_Rechercher" Background="#FF3DDDC2"/>
+        <DataGrid AutoGenerateColumns="False" IsReadOnly="True" x:Name="DataGrid1" HorizontalAlignment="Left" Width="665" Grid.Column="1" Margin="150,148,0,2" Grid.RowSpan="2" Background="#FFFBFBFB"/>
 
-        <Button Content="&lt;" HorizontalAlignment="Left" Height="19" Margin="7,7,0,0" VerticalAlignment="Top" Width="20" Click="Button_Click" Grid.Column="1"/>
-        <Button Click="Actualiser" Grid.Column="1" Content="Actualiser" HorizontalAlignment="Left" Margin="312,64,0,0" VerticalAlignment="Top"/>
+        <Button Content="&lt;" HorizontalAlignment="Left" Height="19" Margin="4,215,0,0" VerticalAlignment="Top" Width="20" Click="Button_Click" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2"/>
+        <Button Content="Actualiser"
+                Click="Actualiser"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+            Foreground="White"
+            FontSize="10"
+            FontWeight="Medium" Background="#FFFC6586" BorderBrush="#FF383660" Margin="298,-6,0,0"  Grid.Column="1">
+
+        </Button>
 
     </Grid>
 

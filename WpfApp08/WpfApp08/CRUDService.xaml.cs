@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WPF_Salaries;
 using WpfApp08.Models2;
 
 namespace WpfApp08
@@ -219,7 +220,10 @@ namespace WpfApp08
             }
         }
 
-
+        private void Actualiser(object sender, RoutedEventArgs e)
+        {
+            Chargerlesservices();
+        }
 
         private async void Chargerlesservices()
         {
@@ -233,10 +237,11 @@ namespace WpfApp08
                     if (response.IsSuccessStatusCode)
                     {
                         string json = await response.Content.ReadAsStringAsync();
-                        var sites = JsonConvert.DeserializeObject<Service[]>(json);
+                        var service = JsonConvert.DeserializeObject<Service[]>(json);
 
-
-                        DataGrid1.ItemsSource = sites;
+                        DataGrid1.Columns.Clear();
+                        DataGrid1.ItemsSource = service;
+                        DataGrid1.Columns.Add(new DataGridTextColumn { Header = "Service", Binding = new Binding("Nom_Service") });
                     }
                     else
                     {

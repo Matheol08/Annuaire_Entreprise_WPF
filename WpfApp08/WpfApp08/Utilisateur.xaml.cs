@@ -131,14 +131,6 @@ namespace WpfApp08
 
 
 
-
-
-
-
-
-
-
-
         private async void ChargerSalaries()
         {
             try

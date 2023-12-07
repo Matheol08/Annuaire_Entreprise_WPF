@@ -133,6 +133,9 @@ namespace WpfApp08
                     {
                         // Mise à jour réussie
                         MessageBox.Show("Mise à jour réussie !");
+                        CRUDEmploye pageAcceuil = new CRUDEmploye();
+                        pageAcceuil.Show();
+                        this.Close();
                     }
                     else
                     {

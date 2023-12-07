@@ -147,3 +147,4 @@ C:\Users\mathe\OneDrive\Documents\Projet Annuaire\Annuaire_Entreprise_WPF\WpfApp
 C:\Users\mathe\OneDrive\Documents\Projet Annuaire\Annuaire_Entreprise_WPF\WpfApp08\WpfApp08\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\mathe\OneDrive\Documents\Projet Annuaire\Annuaire_Entreprise_WPF\WpfApp08\WpfApp08\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\mathe\OneDrive\Documents\Projet Annuaire\Annuaire_Entreprise_WPF\WpfApp08\WpfApp08\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\mathe\OneDrive\Documents\Projet Annuaire\Annuaire_Entreprise_WPF\WpfApp08\WpfApp08\bin\Debug\net6.0-windows\MetroFramework.dll

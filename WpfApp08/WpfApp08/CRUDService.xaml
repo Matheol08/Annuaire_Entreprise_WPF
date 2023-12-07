@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp08"
         mc:Ignorable="d"
-        Title="CRUDService" Height="322" Width="733">
-    <Grid Margin="0,0,3,3">
+        WindowStyle="None" ResizeMode="NoResize"
+        Title="CRUDService" Height="322" Width="634">
+    <Grid Margin="0,0,-1,0" Background="#FF0F0F2D">
         <Grid.RowDefinitions>
 
             <RowDefinition Height="27*"/>
@@ -14,15 +15,28 @@
 
         </Grid.RowDefinitions>
 
-        <TextBox IsReadOnly="True" HorizontalAlignment="Left" Height="36" Margin="14,10,0,0" TextWrapping="Wrap" Text="Modifier les services:" VerticalAlignment="Top" Width="196" FontSize="20" BorderBrush="White"/>
+        <TextBox IsReadOnly="True" HorizontalAlignment="Left" Height="36" Margin="14,10,0,0" TextWrapping="Wrap" Text="Modifier les services:" VerticalAlignment="Top" Width="196" FontSize="20" BorderBrush="#FF0F0F2D" Background="#FF0F0F2D" Foreground="White"/>
 
-        <Button Content="Mettre à jour" HorizontalAlignment="Left" Height="27" Margin="620,140,0,0" VerticalAlignment="Top" Width="75" Click="MAJ_Click" Grid.Row="1"/>
-        <Button Content="&lt;" HorizontalAlignment="Left" Height="19" Margin="23,194,0,0" VerticalAlignment="Top" Width="20" Click="RetourButton_Click" Grid.Row="1" RenderTransformOrigin="0.3,0.64"/>
-        <DataGrid x:Name="DataGrid1" HorizontalAlignment="Left" Height="180" Margin="231,17,0,0" VerticalAlignment="Top" Width="239" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Row="1"/>
-        <Button Click="Ajouter_Click" Content="Ajouter" HorizontalAlignment="Left" Height="27" Margin="620,40,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1"/>
-        <Button Click="Supprimer_Click" Content="Supprimer" HorizontalAlignment="Left" Height="27" Margin="620,90,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1"/>
-        <TextBox x:Name="Nom_Service" HorizontalAlignment="Left" Height="16" Margin="300,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="121"/>
-        <TextBox BorderBrush="White" HorizontalAlignment="Left" Margin="299,26,0,0" TextWrapping="Wrap" Text="Nom du Service:" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Mettre à jour" HorizontalAlignment="Left" Height="27" Margin="520,114,0,0" VerticalAlignment="Top" Width="75" Click="MAJ_Click" Grid.Row="1" Background="#FF383660" Foreground="White" BorderBrush="#FF383660"/>
+        <Button Content="&lt;" HorizontalAlignment="Left" Height="19" Margin="20,209,0,0" VerticalAlignment="Top" Width="20" Click="RetourButton_Click" Grid.Row="1" RenderTransformOrigin="0.3,0.64"/>
+        <DataGrid AutoGenerateColumns="False" x:Name="DataGrid1" HorizontalAlignment="Left" Height="169" Margin="235,24,0,0" VerticalAlignment="Top" Width="174" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Row="1">
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="FontSize" Value="20"/>
+                </Style>
+            </DataGrid.CellStyle>
+        </DataGrid>
+
+        <Button Click="Ajouter_Click" Content="Ajouter" HorizontalAlignment="Left" Height="27" Margin="520,32,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Background="#FF3DDDC2" BorderBrush="#FF3DDDC2" Foreground="Black"/>
+        <Button Click="Supprimer_Click" Content="Supprimer" HorizontalAlignment="Left" Height="27" Margin="520,155,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Background="#FFFC6586" BorderBrush="#FFFC6586"/>
+        <TextBox x:Name="Nom_Service" HorizontalAlignment="Center" Height="16" Margin="0,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="121"/>
+        <TextBox BorderBrush="#FF0F0F2D" HorizontalAlignment="Left" Margin="157,53,0,0" TextWrapping="Wrap" Text="Nom du Service:" VerticalAlignment="Top" Width="94" Background="#FF0F0F2D" Foreground="White"/>
+        <Button Content="Actualiser"
+            Click="Actualiser"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Foreground="#FF080000"
+            FontWeight="Medium" Background="#FF3DDDC2" BorderBrush="#FF3DDDC2" Margin="521,74,0,0" Grid.Row="1" Height="27" Width="73"/>
 
     </Grid>
 </Window>

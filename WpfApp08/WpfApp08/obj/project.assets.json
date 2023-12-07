@@ -570,7 +570,7 @@
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
@@ -588,6 +588,21 @@
             "rid": "win"
           }
         }
+      },
+      "ModernUI/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "4.7.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MetroFramework.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       },
       "Newtonsoft.Json/13.0.3": {
         "type": "package",
@@ -710,7 +725,7 @@
           "Microsoft.Win32.SystemEvents": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
         },
@@ -1946,6 +1961,20 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "ModernUI/2.0.0": {
+      "sha512": "uFs5caxyT0YXJ08jXI80LlP7TE7LpMUXB2duD1TU697zUl+QCJAFCiu+b9wmzwUFkjsNvmed7okNK94yKv6pVA==",
+      "type": "package",
+      "path": "modernui/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/MetroFramework.dll",
+        "lib/netcoreapp3.0/MetroFramework.dll",
+        "lib/netcoreapp3.1/MetroFramework.dll",
+        "modernui.2.0.0.nupkg.sha512",
+        "modernui.nuspec"
+      ]
+    },
     "Newtonsoft.Json/13.0.3": {
       "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
@@ -2948,6 +2977,7 @@
       "Microsoft.Data.SqlClient >= 5.1.2",
       "Microsoft.EntityFrameworkCore >= 7.0.14",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.14",
+      "ModernUI >= 2.0.0",
       "Newtonsoft.Json >= 13.0.3",
       "System.Data.SqlClient >= 4.8.5"
     ]
@@ -3002,6 +3032,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.14, )"
+          },
+          "ModernUI": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

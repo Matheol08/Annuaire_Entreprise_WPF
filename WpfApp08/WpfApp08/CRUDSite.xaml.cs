@@ -55,6 +55,7 @@ namespace WpfApp08
                 Sites nouveauSite = new Sites
                 {
                     Ville = Nouveasite,
+                    Statut_Site = ""
                 };
 
                 Sites.Add(nouveauSite);
@@ -235,7 +236,11 @@ namespace WpfApp08
             {
 
             }
-            private async void Chargerlessites()
+            private void Actualiser(object sender, RoutedEventArgs e)
+            {
+                Chargerlessites();
+            }
+        private async void Chargerlessites()
             {
                 try
                 {
@@ -249,10 +254,14 @@ namespace WpfApp08
                             string json = await response.Content.ReadAsStringAsync();
                             var sites = JsonConvert.DeserializeObject<Sites[]>(json);
 
+                        DataGrid1.Columns.Clear();
+                        DataGrid1.ItemsSource = sites;
+                        DataGrid1.Columns.Add(new DataGridTextColumn { Header = "Ville", Binding = new Binding("Ville") });
+                        DataGrid1.Columns.Add(new DataGridTextColumn { Header = "Statut_Site", Binding = new Binding("Statut_Site") });
 
-                            DataGrid1.ItemsSource = sites;
-                        }
-                        else
+                    }
+                    
+                    else
                         {
                             MessageBox.Show($"Erreur lors de la récupération des données : {response.ReasonPhrase}");
                         }

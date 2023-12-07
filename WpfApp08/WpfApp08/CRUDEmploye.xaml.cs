@@ -97,7 +97,10 @@ namespace WpfApp08
                 return false;
             }
         }
-
+        private void Actualiser(object sender, RoutedEventArgs e)
+        {
+            ChargerSalaries();
+        }
 
         private void DataGrid1_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
         {
