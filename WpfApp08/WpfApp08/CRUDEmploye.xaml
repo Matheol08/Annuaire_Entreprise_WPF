@@ -26,7 +26,7 @@
             </DataGrid.CellStyle>
         </DataGrid>
         <Button Click="Ajouter_Click" Content="Ajouter" HorizontalAlignment="Left" Height="27" Margin="785,50,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Foreground="#FF020101" Background="#FF3DDDC2" BorderBrush="#FF3DDDC2"/>
-        <Button Content="Supprimer" HorizontalAlignment="Left" Height="27" Margin="786,176,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Background="#FFFC6586" Foreground="#FF080101" BorderBrush="#FFFC6586"/>
+        <Button Click="Supprimer_Click" Content="Supprimer" HorizontalAlignment="Left" Height="27" Margin="786,176,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Background="#FFFC6586" Foreground="#FF080101" BorderBrush="#FFFC6586"/>
         <Button Content="Actualiser"
             Click="Actualiser"
             HorizontalAlignment="Left"

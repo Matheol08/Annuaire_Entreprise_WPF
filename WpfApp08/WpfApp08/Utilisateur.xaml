@@ -54,11 +54,8 @@
                 Click="Actualiser"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-            Foreground="White"
-            FontSize="10"
-            FontWeight="Medium" Background="#FFFC6586" BorderBrush="#FF383660" Margin="298,-6,0,0"  Grid.Column="1">
-
-        </Button>
+            Foreground="#FF030000"
+            FontWeight="Medium" Background="#FFFC6586" BorderBrush="#FF383660" Margin="278,-10,0,0"  Grid.Column="1" Height="26" Width="66"/>
 
     </Grid>
 
